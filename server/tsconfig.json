@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    // Paths
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Node + ESM setup
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Strict TypeScript
+    "strict": true,
+    "skipLibCheck": true,
+
+    // Debug & output
+    "sourceMap": true,
+    "resolveJsonModule": true,
+
+    // Node types
+    "types": ["node"]
+  },
+  "include": ["src"]
+}
