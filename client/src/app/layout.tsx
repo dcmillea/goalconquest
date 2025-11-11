@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import { Cinzel, Inter } from "next/font/google";
+import Header from "./components/layout/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +12,17 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -26,9 +39,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cinzel.variable} ${inter.variable} text-gray-100 font-body antialiased`}
       >
-        {children}
+        <div className="relative w-full min-h-screen">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
