@@ -2,9 +2,9 @@
 
 import { useEffect } from "react";
 import { apiRequest } from "../../lib/api";
-import MainContainer from "./components/layout/MainContainer";
+import LandingPageSiteContainer from "./components/layout/LandingPageSiteContainer";
 
-export default function HomePage() {
+export default function HomePage({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     console.log("Pinging backend...");
     apiRequest("/")
@@ -12,5 +12,5 @@ export default function HomePage() {
       .catch((err: any) => console.log(`❌ ${err.message}`));
   }, []);
 
-  return <MainContainer />;
+  return <LandingPageSiteContainer>{children}</LandingPageSiteContainer>;
 }
