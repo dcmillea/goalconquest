@@ -18,7 +18,7 @@ export default function LandingPageHeader() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8 text-gold">
+          <nav className="hidden md:flex space-x-8 text-royal">
             <Link
               href="/about"
               className="hover:text-gold transition-colors duration-200"
@@ -41,7 +41,7 @@ export default function LandingPageHeader() {
 
           {/* Hamburger Menu Button */}
           <button
-            className="md:hidden text-gold focus:outline-none"
+            className="md:hidden text-royal focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? "✖️" : "☰"}

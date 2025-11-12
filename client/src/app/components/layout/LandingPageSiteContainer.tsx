@@ -1,5 +1,6 @@
 import LandingPagesContainer from "./LandingPagesContainer";
 import LandingPageHeader from "./LandingPageHeader";
+import Footer from "./Footer";
 
 export default function LandingPageSiteContainer({
   children,
@@ -16,6 +17,7 @@ export default function LandingPageSiteContainer({
         <div className="relative z-10 min-h-screen">
           <LandingPageHeader />
           <LandingPagesContainer>{children}</LandingPagesContainer>
+          <Footer />
         </div>
       </div>
     </div>

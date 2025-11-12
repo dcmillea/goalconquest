@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import { Cinzel, Inter } from "next/font/google";
-import Header from "./components/layout/LandingPageHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,10 +40,7 @@ export default function RootLayout({
       <body
         className={`${cinzel.variable} ${inter.variable} text-gray-100 font-body antialiased`}
       >
-        {/* <div className="relative w-full min-h-screen">
-          <Header /> */}
         {children}
-        {/* </div> */}
       </body>
     </html>
   );

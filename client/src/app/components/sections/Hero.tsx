@@ -3,7 +3,7 @@ import PublicHoverButton from "../ui/PublicHoverButton";
 
 export default function Hero() {
   return (
-    <div className="pt-52 w-full min-h-screen flex flex-col justify-start items-center md:pt-64">
+    <div className="pt-52 pb-4 w-full min-h-screen flex flex-col justify-start items-center md:pt-64">
       <h1 className="text-6xl text-center font-bold font-inter filter drop-shadow-lg drop-shadow-neutral-950">
         Turn Work into War
       </h1>
